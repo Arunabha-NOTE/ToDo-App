@@ -58,7 +58,7 @@ function Navbar() {
                                     }}
                                 >TEAM
                                 </NavLink>
-                                <a rel="noopener noreferrer" target="_noref" href="http://localhost:8080" className="px-6 py-2 font-medium border-dracula border-2 shadow-lg rounded text-pracula bg-dracula hover:bg-pracula hover:text-dracula">Go To TODO-APP</a>
+                                <a rel="noopener noreferrer"  href="http://localhost:8080" className="px-6 py-2 font-medium border-dracula border-2 shadow-lg rounded text-pracula bg-dracula hover:bg-pracula hover:text-dracula">Go To TODO-APP</a>
                             </div>
                             {/* Mobile navigation toggle */}
                             <div className="lg:hidden flex items-center">
@@ -99,7 +99,7 @@ function Navbar() {
                                   };
                                 }}
                             >TEAM</NavLink>
-                            <a rel="noopener noreferrer" target="_noref" href="http://localhost:8080" className="px-6 py-2 font-medium border-dracula border-2 shadow-lg rounded text-pracula bg-dracula hover:bg-pracula hover:text-dracula">Go TO TODO-APP</a>
+                            <a rel="noopener noreferrer" href="http://localhost:8080" className="px-6 py-2 font-medium border-dracula border-2 shadow-lg rounded text-pracula bg-dracula hover:bg-pracula hover:text-dracula">Go TO TODO-APP</a>
                         </div>
                     </div>
                 </div>

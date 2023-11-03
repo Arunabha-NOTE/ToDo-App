@@ -92,6 +92,10 @@
         <a href="/addToDoItem">Add New ToDo Item</a>
     </button>
 
+    <button type="button" class="btn btn-primary btn-block">
+        <a href="http://localhost:3000">Go Back To Home Page</a>
+    </button>
+
 </div>
 
 <script th:inline="javascript">
