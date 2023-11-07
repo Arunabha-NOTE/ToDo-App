@@ -19,6 +19,14 @@
             src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script
             src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script type="text/javascript">
+        function name()
+        {
+            alert("Task Completed!");
+            document.write("Task Completed!");
+        }
+    </script>
+
 
     <style>
 
@@ -42,6 +50,27 @@
         }
         .btn-primary {
             background-color: #BD93F9;
+
+        }
+        .yoyo {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+        .yoyo2 {
+            background-color: red;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
         }
     </style>
 
@@ -71,13 +100,13 @@
                     <td>${todo.title}</td>
                     <td>${todo.date}</td>
                     <td>${todo.status}</td>
-                    <td><button type="button" class="btn btn-success">
+                    <td><button  class="yoyo" onclick="alertMessage();" >
                         <a href="/updateToDoStatus/${todo.id}">Mark Complete</a>
                     </button></td>
 <%--                    <td><button type="button" class="btn btn-primary">--%>
 <%--                        <a href="/editToDoItem/${todo.id}">Edit</a>--%>
 <%--                    </button></td>--%>
-                    <td><button type="button" class="btn btn-danger">
+                    <td><button class = "yoyo2">
                         <a href="/deleteToDoItem/${todo.id}">Delete</a>
                     </button></td>
                 </tr>
@@ -99,6 +128,10 @@
 </div>
 
 <script th:inline="javascript">
+    function alertMessage() {
+        alert("Task Completed");
+
+    }
     window.onload = function() {
 
         var msg = "${message}";
